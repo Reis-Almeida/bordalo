@@ -1,10 +1,6 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
-
 import React from "react";
 
-import section from 'src/styles/Section.module.css';
-import Header from "src/components/header";
+import Header from "src/components/Header";
 import Footer from "src/components/Footer";
 import Head from "next/head";
 import Link from "next/link";
@@ -18,20 +14,20 @@ function News() {
           <meta name="description" content="Profissionais capacitados, atendimento personalizado e a qualidade que você merece. Seja para vender, alugar ou avaliar seu imóvel, nossa equipe está pronta para atendê-lo!" />
       </Head>
       <Header />
-      <div className={section.banner}>
-          <div className={section.bannerText}>
+      <div className="banner">
+          <div className="bannerText">
               <h1>Notícias</h1>
           </div>
       </div>
-      <section className={section.newsArea}>
-          <div className={section.containerNews}>
+      <section className="newsArea">
+          <div className="containerNews">
             <div>
               <h2>Vendas do mercado imobiliário sobem 16% no trimestre</h2>
 
               <p>Número de lançamentos subiu 11,8% e atingiu 30.607 unidades</p>
             </div>
 
-            <div className={section.imageContainer}>
+            <div className="imageContainer">
                 <img src="https://www.bordaloimob.com.br/Content/imgs/dados-1-1-1-e1559122555573.jpg" height="540" width="800" />
                 <p><strong>Fonte:</strong> Germano Lüders / VILA NOVA CONCEICAO</p>
 
@@ -76,7 +72,7 @@ function News() {
             </p>
 
             <p>
-                <strong sx={{ display: "block" }}>Referência de material com autoria conhecida:</strong>
+                <strong style={{ display: "block" }}>Referência de material com autoria conhecida:</strong>
                 Estadão Conteúdo. Vendas do mercado imobiliário sobem 16% no trimestre. Disponível em: 
                 {`<`}https://exame.abril.com.br/economia/mercado-imobiliario-tem-alta-de-118-em-lancamentos{`>`}. 
                 26 ago 2019, 12h48. Acesso em: 08 de Outubro de 2019
@@ -84,14 +80,14 @@ function News() {
 
           </div>
 
-          <div className={section.containerNews}>
+          <div className="containerNews">
             <div>
               <h2>Presidente da Ademi: mercado imobiliário deve gerar 110 mil empregos no DF</h2>
 
               <p>Eduardo Aroeira disse, em entrevista ao programa CB.Poder, que o momento é ideal para a compra da casa própria</p>
             </div>
 
-            <div className={section.imageContainer}>
+            <div className="imageContainer">
                 <img src="https://www.bordaloimob.com.br/Content/imgs/20191001175525273691i.jpg" height="540" width="800" />
                 <p><strong>Fonte:</strong> Ana Rayssa/CB/D.A Press</p>
 
@@ -185,7 +181,7 @@ function News() {
 
 
             <p>
-                <strong sx={{ display: "block" }}>Referência de material com autoria conhecida:</strong>
+                <strong style={{ display: "block" }}>Referência de material com autoria conhecida:</strong>
                 MOURA, Thaís. Presidente da Ademi: mercado imobiliário deve gerar 110 mil empregos no DF. Disponível em: &nbsp;
                 <Link href="https://www.correiobraziliense.com.br/app/noticia/economia/2019/10/01/internas_economia,793145/presidente-da-ademi-mercado-imobiliario-deve-gerar-110-mil-empregos.shtml" passHref={true}>
                     <a target="_blank" sx={{ variant: "anchors.primaryFont" }}>

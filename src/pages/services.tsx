@@ -1,8 +1,4 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
-
-import section from 'src/styles/Section.module.css';
-import Header from "src/components/header";
+import Header from "src/components/Header";
 import Head from "next/head";
 
 import Link from "next/link";
@@ -17,19 +13,19 @@ function Services() {
             <meta name="description" content="Profissionais capacitados, atendimento personalizado e a qualidade que você merece. Seja para vender, alugar ou avaliar seu imóvel, nossa equipe está pronta para atendê-lo!" />
         </Head>
         <Header />
-        <div className={section.bannerCompany}>
-            <div className={section.bannerText}>
+        <div className="bannerCompany">
+            <div className="bannerText">
                 <h1>Serviços</h1>
             </div>
         </div>
 
         <section>
-            <div className={section.servicesBanner}>
+            <div className="servicesBanner">
                 Somos uma imobiliária full service que atua de forma profissional e especializada. Conheça e entenda cada serviço que realizamos:
             </div>
 
-            <div className={section.serviceContainerOne}>
-                <div className={section.serviceInfoContainer}>
+            <div className="serviceContainerOne">
+                <div className="serviceInfoContainer">
                     <h2>VENDA</h2>
                     <p>
                         Nada de dor de cabeça na hora de vender um imóvel: aqui oferecemos agilidade, segurança e tranquilidade para 
@@ -50,8 +46,8 @@ function Services() {
                 </div>
             </div>
 
-            <div className={section.serviceContainerTwo}>
-                <div className={section.serviceInfoContainer}>
+            <div className="serviceContainerTwo">
+                <div className="serviceInfoContainer">
                     <h2>ALUGUEL</h2>
                     <p>
                         A Bordalo Imob trabalha para que seu imóvel seja alugado com o máximo de celeridade, garantindo 
@@ -76,8 +72,8 @@ function Services() {
                 </div>
             </div>
 
-            <div className={section.serviceContainerThree}>
-                <div className={section.serviceInfoContainer}>
+            <div className="serviceContainerThree">
+                <div className="serviceInfoContainer">
                     <h2>LANÇAMENTOS</h2>
                     <p>
                         Realizamos na Bordalo Imob lançamentos imobiliários pontuais e trabalhamos sempre com imóveis especiais que 
@@ -92,8 +88,8 @@ function Services() {
                 </div>
             </div>
 
-            <div className={section.serviceContainerFour}>
-                <div className={section.serviceInfoContainer}>
+            <div className="serviceContainerFour">
+                <div className="serviceInfoContainer">
                     <h2>LAUDO DE AVALIAÇÕES</h2>
                     <p>
                         Avaliar o patrimônio é uma tarefa que requer seriedade, competência e conhecimento de imóveis. Nessa atividade, 
@@ -144,8 +140,8 @@ function Services() {
                 </div>
             </div>
 
-            <div className={section.serviceContainerFive}>
-                <div className={section.serviceInfoContainer}>
+            <div className="serviceContainerFive">
+                <div className="serviceInfoContainer">
                     <h2>CRÉDITO IMOBILIÁRIO</h2>
                     <p>
                         Estamos ao seu lado nesta grande conquista!
@@ -178,8 +174,8 @@ function Services() {
                 </div>
             </div>
 
-            <div className={section.serviceContainerSix}>
-                <div className={section.serviceInfoContainer}>
+            <div className="serviceContainerSix">
+                <div className="serviceInfoContainer">
                     <h2>CLEAN HOUSE</h2>
                     <p>
                         O CLEAN HOUSE disponibiliza cuidados semanais com a piscina do imóvel, estando os produtos necessários inclusos, 
@@ -193,8 +189,8 @@ function Services() {
                 </div>
             </div>
 
-            <div className={section.serviceContainerSeven}>
-                <div className={section.serviceInfoContainer}>
+            <div className="serviceContainerSeven">
+                <div className="serviceInfoContainer">
                     <h2>MARKETING</h2>
                     <p>
                         Inclui a utilização dos seguintes meios:
@@ -215,8 +211,8 @@ function Services() {
                 </div>
             </div>
 
-            <div className={section.serviceContainerEight}>
-                <div className={section.serviceInfoContainer}>
+            <div className="serviceContainerEight">
+                <div className="serviceInfoContainer">
                     <h2>MAILING VIP</h2>
                     <p>
                         O mailing da Bordalo Imob é usado com muito critério, sigilo e especialmente suportado por 

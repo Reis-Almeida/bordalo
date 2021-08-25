@@ -1,13 +1,8 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
 import { useEffect, useState } from "react";
 import { useAppContext } from "src/context/parseXml";
 import Link from "next/link";
 
-import styles from 'src/styles/Home.module.css';
-import Section from 'src/styles/Section.module.css';
-
-import SectionFull from "src/components/fullSection";
+import SectionFull from "src/components/SectionFull";
 import SearchForm from "src/components/SearchForm";
 import Footer from "src/components/Footer";
 
@@ -16,10 +11,9 @@ import { useApi } from "src/hooks/useApi";
 
 import { IContext } from "interfaces";
 
-import LatestSellPropeties from "src/components/LatestSellPropeties";
-import LatestRentProperties from "src/components/LatestRentProperties";
+import { LatestRentProperties, LatestSellPropeties } from "src/components/LatestProperties";
 import AnimatedLoadingScreen from "src/components/AnimatedLoadingScreen";
-import Header from "src/components/header";
+import Header from "src/components/Header";
 import Head from "next/head";
 
 export default function Home() {
@@ -97,7 +91,7 @@ export default function Home() {
 
       <Header />
       <SectionFull>
-        <div className={Section.sectionDiv}>
+        <div className={"sectionDiv"}>
           <SearchForm 
             cityList={cities}
             updateStreetBuy={extractStreetsBuy}
@@ -106,18 +100,18 @@ export default function Home() {
             streetListRent={streetsRent}
           />
 
-          <div className={styles.announceContainer}>
+          <div className="announceContainer">
             <h2>Anuncie aqui seu imóvel grátis</h2>
 
             <Link href="/announce">
-              <a sx={{ variant: "anchors.primary" }}>Clique aqui para anunciar</a>
+              <a>Clique aqui para anunciar</a>
             </Link>
           </div>
         </div>
       </SectionFull>
 
-      <section className={styles.bodyContainer}>
-        <section className={styles.recentPropertiesContainer}>
+      <section className="bodyContainer">
+        <section className="recentPropertiesContainer">
             <h1>
                 Nossos imóveis à venda em destaque
             </h1>
@@ -131,7 +125,7 @@ export default function Home() {
             />
         </section>
 
-        <section className={styles.recentPropertiesContainer}>
+        <section className="recentPropertiesContainer">
             <h1>
                 Nossos imóveis para aluguel em destaque
             </h1>

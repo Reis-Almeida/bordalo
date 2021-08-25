@@ -1,19 +1,17 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
 import { useEffect, useState } from "react";
 import { teamMembers } from "lib/team";
 
-import section from 'src/styles/Section.module.css';
 import Footer from "src/components/Footer";
 import Link from "next/link";
 
 import { useRouter } from 'next/router';
 
-import MissingImage from "../../public/images/missingPhoto.jpg";
 
 import AnimatedLoadingScreen from "src/components/AnimatedLoadingScreen";
-import Header from "src/components/header";
+import Header from "src/components/Header";
 import Head from "next/head";
+
+const MissingImage = "/images/missingPhoto.jpg";
 
 const filterEmployee = (code : number) => {
     const emp = teamMembers.filter(e => e.code === code);
@@ -88,12 +86,12 @@ function Employee() {
             </Head>
             <Header />
 
-            <section className={section.containerStatic}>
-                <div className={section.EmployeeContentFull}>
+            <section className="containerStatic">
+                <div className="EmployeeContentFull">
 
-                    <div className={section.lineLinksItem}>
+                    <div className="lineLinksItem">
                         <Link href="/team">
-                            <a sx={{ color: 'primary' }}>
+                            <a>
                                 Equipe 
                             </a>
                         </Link>
@@ -101,7 +99,7 @@ function Employee() {
                         {employee?.name}
                     </div>
 
-                    <div className={section.employeeContainer}>
+                    <div className="employeeContainer">
                         <div>
                             {employee?.image && <img src={employee.image} width="350" height="350" />}
                             {!employee?.image && <img src={MissingImage} width="350" height="350" />}
@@ -114,12 +112,12 @@ function Employee() {
                                 {employee?.position}
                             </p>
 
-                            <ul className={section.employeeListInfo}>
+                            <ul className="employeeListInfo">
                                 {filteredKeys.map(v => {
                                     if(v[1] !== '' && v[0] !== "image") {
                                         return (
                                             <li key={v[0]}>
-                                                <span>{v[0]}</span>: <a sx={{ color: "primary" }}> {v[1]} </a> 
+                                                <span>{v[0]}</span>: <a> {v[1]} </a> 
                                             </li>
                                         )
                                     }

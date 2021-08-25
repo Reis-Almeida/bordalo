@@ -1,8 +1,4 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
-
-import section from 'src/styles/Section.module.css';
-import Header from "src/components/header";
+import Header from "src/components/Header";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -20,14 +16,14 @@ function Company() {
         </Head>
         <Header
         />
-        <div className={section.bannerCompany}>
-            <div className={section.bannerText}>
+        <div className="bannerCompany">
+            <div className="bannerText">
                 <h1>Quem somos</h1>
             </div>
         </div>
 
-        <section className={section.containerStaticPage}>
-            <div className={section.companyContent}> 
+        <section className="containerStaticPage">
+            <div className="companyContent"> 
                 <p>
                     Criada por <strong>Aurélio Bordalo</strong> e <strong>Danielle Costa</strong>, a <strong>BORDALO IMOB</strong> é o resultado de 18 anos de dedicação e experiência ao mercado imobiliário.
                 </p>
@@ -65,18 +61,18 @@ function Company() {
             </div>
         </section>
 
-        <section className={section.containerStaticPage}>
-            <div className={section.servicesContent}> 
+        <section className="containerStaticPage">
+            <div className="servicesContent"> 
 
                 <h2>Serviços</h2>
 
-                <div className={section.servicesContainer}>
-                    <div className={section.service}>
+                <div className="servicesContainer">
+                    <div className="service">
                         <div>
                             <FaFontAwesomeFlag  size={40} color={"#333"} />
                         </div>
 
-                        <div className={section.serviceDescription}>
+                        <div className="serviceDescription">
                             <h3>Vendas</h3>
                             <p>
                                 Nada de dor de cabeça na hora de vender um imóvel: 
@@ -85,19 +81,19 @@ function Company() {
                             </p>
 
                             <Link href="/services">
-                                <a sx={{ variant: 'anchors.primaryFont'}}>
+                                <a>
                                     Leia mais
                                 </a>
                             </Link>
                         </div>
                     </div>
 
-                    <div className={section.service}>
+                    <div className="service">
                         <div>
                             <FaFontAwesomeFlag  size={40} color={"#333"} />
                         </div>
 
-                        <div className={section.serviceDescription}>
+                        <div className="serviceDescription">
                             <h3>Aluguel e Administração</h3>
                             <p>
                                 A Bordalo Imob trabalha para que seu imóvel 
@@ -106,19 +102,19 @@ function Company() {
                             </p>
 
                             <Link href="/services">
-                                <a sx={{ variant: 'anchors.primaryFont'}}>
+                                <a>
                                     Leia mais
                                 </a>
                             </Link>
                         </div>
                     </div>
 
-                    <div className={section.service}>
+                    <div className="service">
                         <div>
                             <FaFontAwesomeFlag  size={40} color={"#333"} />
                         </div>
 
-                        <div className={section.serviceDescription}>
+                        <div className="serviceDescription">
                             <h3>Lançamentos</h3>
                             <p>
                                 Realizamos na Bordalo Imob lançamentos imobiliários 
@@ -127,19 +123,19 @@ function Company() {
                             </p>
 
                             <Link href="/services">
-                                <a sx={{ variant: 'anchors.primaryFont'}}>
+                                <a>
                                     Leia mais
                                 </a>
                             </Link>
                         </div>
                     </div>
 
-                    <div className={section.service}>
+                    <div className="service">
                         <div>
                             <FaFontAwesomeFlag  size={40} color={"#333"} />
                         </div>
 
-                        <div className={section.serviceDescription}>
+                        <div className="serviceDescription">
                             <h3>Avaliações Imobiliárias</h3>
                             <p>
                                 Avaliar o patrimônio é uma tarefa que requer seriedade, 
@@ -147,19 +143,19 @@ function Company() {
                             </p>
 
                             <Link href="/services">
-                                <a sx={{ variant: 'anchors.primaryFont'}}>
+                                <a>
                                     Leia mais
                                 </a>
                             </Link>
                         </div>
                     </div>
 
-                    <div className={section.service}>
+                    <div className="service">
                         <div>
                             <FaFontAwesomeFlag  size={40} color={"#333"} />
                         </div>
 
-                        <div className={section.serviceDescription}>
+                        <div className="serviceDescription">
                             <h3>Crédito Imobiliário</h3>
                             <p>
                                 A compra de um imóvel representa a realização de um grande 
@@ -168,19 +164,19 @@ function Company() {
                             </p>
 
                             <Link href="/services">
-                                <a sx={{ variant: 'anchors.primaryFont'}}>
+                                <a>
                                     Leia mais
                                 </a>
                             </Link>
                         </div>
                     </div>
 
-                    <div className={section.service}>
+                    <div className="service">
                         <div>
                             <FaFontAwesomeFlag  size={40} color={"#333"} />
                         </div>
 
-                        <div className={section.serviceDescription}>
+                        <div className="serviceDescription">
                             <h3>Clean House</h3>
                             <p>
                                 O CLEAN HOUSE disponibiliza cuidados semanais com a piscina 
@@ -189,19 +185,19 @@ function Company() {
                             </p>
 
                             <Link href="/services">
-                                <a sx={{ variant: 'anchors.primaryFont'}}>
+                                <a>
                                     Leia mais
                                 </a>
                             </Link>
                         </div>
                     </div>
 
-                    <div className={section.service}>
+                    <div className="service">
                         <div>
                             <FaFontAwesomeFlag  size={40} color={"#333"} />
                         </div>
 
-                        <div className={section.serviceDescription}>
+                        <div className="serviceDescription">
                             <h3>Marketing e Divulgação</h3>
                             <p>
                                 Utilizando estratégias em redes sociais, utilizando e-mail marketing 
@@ -209,19 +205,19 @@ function Company() {
                             </p>
 
                             <Link href="/services">
-                                <a sx={{ variant: 'anchors.primaryFont'}}>
+                                <a>
                                     Leia mais
                                 </a>
                             </Link>
                         </div>
                     </div>
 
-                    <div className={section.service}>
+                    <div className="service">
                         <div>
                             <FaFontAwesomeFlag  size={40} color={"#333"} />
                         </div>
 
-                        <div className={section.serviceDescription}>
+                        <div className="serviceDescription">
                             <h3>Mailing Vip</h3>
                             <p>
                                 O mailing da Bordalo Imob é usado com muito critério, 
@@ -230,7 +226,7 @@ function Company() {
                             </p>
 
                             <Link href="/services">
-                                <a sx={{ variant: 'anchors.primaryFont'}}>
+                                <a>
                                     Leia mais
                                 </a>
                             </Link>

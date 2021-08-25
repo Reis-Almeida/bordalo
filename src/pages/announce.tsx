@@ -1,14 +1,8 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
-
 import { useState } from "react";
 
 import Modal from "src/components/Modal";
 
-import styles from 'src/styles/Home.module.css';
-import section from 'src/styles/Section.module.css';
-
-import Header from "src/components/header";
+import Header from "src/components/Header";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -30,14 +24,14 @@ function Announce() {
             </Head>
             <Header />
             <Modal showModal={showModal} handleModal={closeModal} />
-            <div className={section.bannerCompany}>
-                <div className={section.bannerText}>
+            <div className="bannerCompany">
+                <div className="bannerText">
                     <h1>Anuncie grátis aqui</h1>
                 </div>
             </div>
 
-            <section className={section.containerStaticPage}>
-                <div className={section.announceContent}> 
+            <section className="containerStaticPage">
+                <div className="announceContent"> 
                     <h2>
                         Olá, só precisamos de algumas informações para seu imóvel ser anunciado
                     </h2>
@@ -46,7 +40,7 @@ function Announce() {
                         Vamos ao passo a passo
                     </h4>
 
-                    <div className={section.tutorialContainer}>
+                    <div className="tutorialContainer">
                         <div>
                             <ul>
                                 <li>IMÓVEL</li>
@@ -81,9 +75,9 @@ function Announce() {
 
                     <h3>VOCÊ NÃO PAGA NADA PARA ANUNCIAR COM A BORDALO IMOB, VOCÊ SÓ PAGA QUANDO VENDER OU ALUGAR O SEU IMÓVEL!</h3>
 
-                    <div className={styles.announceContainer}>
+                    <div className="announceContainer">
                         <Link href="#">
-                            <a sx={{ variant: "anchors.primary" }} onClick={handleModal}>ANUNCIAR AGORA!!!</a>
+                            <a onClick={handleModal}>ANUNCIAR AGORA!!!</a>
                         </Link>
                     </div>
                 </div>

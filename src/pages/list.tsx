@@ -1,14 +1,8 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
-
 import { useEffect, useState } from "react";
 import { useAppContext } from "src/context/parseXml";
 
-import section from 'src/styles/Section.module.css';
-import property from 'src/styles/Property.module.css';
-
 import FilterFormList from "src/components/FilterFormList";
-import Header from "src/components/header";
+import Header from "src/components/Header";
 import Head from "next/head";
 
 import Footer from "src/components/Footer";
@@ -86,10 +80,10 @@ function List() {
       if(isLoadingScreen) {
         return (
           <SkeletonTheme color="#ddd" highlightColor="#ccc">
-              <div className={property.skeletonContainer}>
-                  <Skeleton className={property.skeletonAuthor} />
-                  <Skeleton className={property.skeletonFilter} />
-                  <Skeleton className={property.skeletonOther} />
+              <div className="skeletonContainer">
+                  <Skeleton className="skeletonAuthor" />
+                  <Skeleton className="skeletonFilter" />
+                  <Skeleton className="skeletonOther" />
               </div>
           </SkeletonTheme>
         );
@@ -113,19 +107,19 @@ function List() {
       </Head>
 
       <Header />
-      <div className={section.containerStatic}>
-        <section className={section.containerList}>
-            <div className={section.lineLinks}>
+      <div className="containerStatic">
+        <section className="containerList">
+            <div className="lineLinks">
 
               <Link href="https://allmateste.com.br/site-next/">
-                <a sx={{ variant: 'anchors.primaryFont' }}>
+                <a>
                   Home 
                 </a>
               </Link>
               <span>{">"}</span> 
               Pesquisa Avançada
             </div>
-            <div className={property.contentReverse}>
+            <div className="contentReverse">
               <aside>
                   {renderContent()}
               </aside>

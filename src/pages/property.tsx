@@ -1,11 +1,7 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
 import React, { useEffect, useState } from "react";
 import { useAppContext } from "src/context/parseXml";
 
-import property from 'src/styles/Property.module.css';
-
-import Header from "src/components/header";
+import Header from "src/components/Header";
 import dynamic from "next/dynamic";
 
 import { useRouter } from 'next/router';
@@ -27,7 +23,7 @@ const LazyPropertyComponent = dynamic(
     loading: ({ error }) => {
       if(error) {
         return (
-          <div className={property.emptyProperty}>
+          <div className="emptyProperty">
               <div>
                 <FaHouseDamage />
               </div>
@@ -40,10 +36,10 @@ const LazyPropertyComponent = dynamic(
 
       return (
         <SkeletonTheme color="#ddd" highlightColor="#ccc">
-            <div className={property.skeletonContainer}>
-                <Skeleton className={property.skeletonImage} />
-                <Skeleton className={property.skeletonBody} />
-                <Skeleton className={property.skeletonMessage} />
+            <div className="skeletonContainer">
+                <Skeleton className="skeletonImage" />
+                <Skeleton className="skeletonBody" />
+                <Skeleton className="skeletonMessage" />
             </div>
         </SkeletonTheme>
       );

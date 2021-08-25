@@ -1,9 +1,4 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
 import React, { useState } from 'react';
-
-import section from 'src/styles/Section.module.css';
-import property from 'src/styles/Property.module.css';
 
 import InputMask from "react-text-mask";
 
@@ -14,7 +9,7 @@ import { GiPhone } from "react-icons/gi";
 import { FiMail } from "react-icons/fi";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
-import Header from "src/components/header";
+import Header from "src/components/Header";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -101,19 +96,19 @@ function Contact() {
                 <meta name="description" content="Profissionais capacitados, atendimento personalizado e a qualidade que você merece. Seja para vender, alugar ou avaliar seu imóvel, nossa equipe está pronta para atendê-lo!" />
             </Head>
             <Header />
-            <div className={section.banner}>
-                <div className={section.bannerText}>
+            <div className="banner">
+                <div className="bannerText">
                     <h1>Entre em contato</h1>
                     <h3>Fique em contato com a gente</h3>
                 </div>
             </div>
 
-            <section className={section.containerStatic}>
+            <section className="containerStatic">
 
-                <div className={section.contactPage}>
-                    <div className={section.lineLinksItem}>
+                <div className="contactPage">
+                    <div className="lineLinksItem">
                         <Link href="/">
-                            <a sx={{ color: 'primary' }}>
+                            <a>
                                 Home 
                             </a>
                         </Link>
@@ -121,17 +116,17 @@ function Contact() {
                         Contato
                     </div>
 
-                    <div className={section.contactsContainer}>
-                        <div className={section.contactstInfo}>
-                            <form onSubmit={handleContactForm} className={property.comment}>
+                    <div className="contactsContainer">
+                        <div className="contactstInfo">
+                            <form onSubmit={handleContactForm} className="comment">
                                 {error && (
-                                    <div className={section.errorMessage}>
+                                    <div className="errorMessage">
                                         {error}
                                     </div>
                                 )}
 
                                 {(sent) && (
-                                    <div className={section.successMessage}>
+                                    <div className="successMessage">
                                         {successMsg && <div>{successMsg}</div>}
                                     </div>
                                 )}
@@ -150,27 +145,27 @@ function Contact() {
                                 <textarea name="message" id="" placeholder="Sua mensagem" rows={10}>
 
                                 </textarea>
-                                <div className={property.formButton}>
-                                    <button type="submit" value="" disabled={isSending} sx={{ variant: 'buttons.primary' }}>
+                                <div className="formButton">
+                                    <button type="submit" value="" disabled={isSending}>
                                         {isSending ? "Enviando..." : "Enviar"}
                                     </button>
                                     {sent && <IoIosCheckmarkCircleOutline size={35} color={"#24bd75"} />}
                                 </div>
                             </form>
 
-                            <div className={section.infoContainer}>
+                            <div className="infoContainer">
 
                                 <div>
-                                    <div className={section.infoTitle}>
+                                    <div className="infoTitle">
                                         <GiPhone /> {app.currentCorretor.tel}
                                     </div>
                                 </div>
 
                                 <div>
-                                    <div className={section.infoTitle}>
+                                    <div className="infoTitle">
                                         <FiMail color="#2c3e50" /> 
                                         <Link href={`mailto:${app.currentCorretor.email}`}> 
-                                            <a sx={{ variant: 'anchors.primaryFont'}}>
+                                            <a>
                                                 {app.currentCorretor.email}
                                             </a>
                                         </Link>
