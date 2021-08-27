@@ -1,12 +1,12 @@
 {
-  "name": "bordalo",
-  "version": "0.1.0",
-  "private": true,
+  "name": "with-typescript",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "type-check": "tsc",
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "azure-maps-control": "^2.0.32",
@@ -20,14 +20,14 @@
     "imagemin-svgo": "^9.0.0",
     "jimp": "^0.16.1",
     "lqip-loader": "^2.2.1",
-    "next": "11.0.1",
+    "next": "latest",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.7.0",
     "next-optimized-images": "^2.6.2",
-    "rc-slider": "^9.7.2",
-    "react": "17.0.2",
+    "rc-slider": "^9.7.1",
+    "react": "^16.12.0",
     "react-azure-maps": "^0.2.1",
-    "react-dom": "17.0.2",
+    "react-dom": "^16.12.0",
     "react-icons": "^4.2.0",
     "react-image-gallery": "^1.0.9",
     "react-lazyload": "^3.2.0",
@@ -37,26 +37,24 @@
     "react-text-mask": "^5.4.3",
     "react-transition-group": "^4.4.1",
     "responsive-loader": "^2.3.0",
-    "styled-components": "^5.3.0",
     "svg-sprite-loader": "^6.0.2",
     "text-mask-addons": "^3.8.0",
+    "theme-ui": "^0.3.5",
     "url-loader": "^4.1.1",
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "@types/gtag.js": "0.0.4",
     "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
     "@types/react-dom": "^16.9.4",
     "@types/react-image-gallery": "^1.0.2",
     "@types/react-lazyload": "^3.1.0",
     "@types/react-lottie": "^1.2.5",
     "@types/react-text-mask": "^5.4.6",
     "@types/react-transition-group": "^4.4.0",
-    "@types/react": "17.0.15",
-    "@types/styled-components": "^5.1.12",
-    "babel-plugin-inline-react-svg": "^1.1.1",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.0.1",
-    "typescript": "4.3.5"
-  }
+    "@types/theme-ui": "^0.3.7",
+    "typescript": "^4.2.3"
+  },
+  "license": "MIT"
 }
